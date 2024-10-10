@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+input::-webkit-input-placeholder {
+    color: #cecece; 
+}
+
+#main-content::-webkit-scrollbar {
+    width: 10px;
+}
+  
+#main-content::-webkit-scrollbar-track {
+    background: #121212;
+}
+ 
+#main-content::-webkit-scrollbar-thumb {
+    background-color: #0b7c33;
+    border-radius: 10px;
+    border: 2px solid #121212;
+}
+#main-content {
+    background: linear-gradient(to bottom, #212121, #121212, #121212);
+    min-height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+}
+.button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.2);
+}
+
+.searchBar {
+    border: none;
+    padding: 10px 10px 10px 40px;
+    width: 390px;
+    font-size: 15px;
+    color: aliceblue;
+}
+.searchIcon {
+    color: white;
+    position: absolute;
+    left: 32%;
+    top: 30%;
+}
+.sidebar {
+    width: 350px;
+    background-color: #121212;
+}
+.sideMenu {
+    font-size: 15px;
+}
+#menu {
+    color: #a5a5a5;
+}
+#menu:hover {
+    color: aliceblue;
+}
+.languageButon{
+    font-size: 12px;
+}
+
+.main {
+    background-color: #202020;
+    margin-left: 250px;
+    width: 500px;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    color: white;
+}
+
+h2 {
+    position: relative;
+}
+span {
+    position: absolute;
+    left: 92%;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.artistName {
+    font-size: 12px;
+}
+
+.profile {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.profile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.2);
+}
+.links:hover {
+    text-decoration: underline;
+}

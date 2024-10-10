@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" href="./images/title logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-black">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="headSection container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="ms-2" style="width: 35px; height: 35px;" src="./images/Spotify Logo.png" alt="Spotify logo">
+          </a>
+          <div>
+            <a class="navbar-brand button bg-dark ps-2 pe-1 rounded-circle" href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i>
+            </a>
+            <i class="searchIcon bi bi-search ms-2"></i>
+            <input class="searchBar rounded-4" style="background-color: #202020;" type="text" placeholder="What do you want to play?">
+          </div>
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item me-3 bg-black">
+                  <a class="button nav-link text-secondary fw-bold px-3 py-1 rounded-5" aria-current="page" href="#">Sign up</a>
+                </li>
+                <li class="nav-item">
+                  <a class="button nav-link bg-light text-dark fw-bold px-3 py-1 border rounded-5" aria-current="page" href="#">Log in</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar and Content-->
+     <div class="d-flex me-2">
+        <!-- Sidebar -->
+        <div class="sidebar ms-1 text-white vh-100 rounded-3">
+            <ul class="nav flex-column p-2 fw-bold">
+                <li class="nav-item"><a href="#" class="nav-link" id="menu"><i class="bi bi-bookmark-heart-fill me-2"></i> Your Library</a>
+                </li>
+            </ul>
+            <ul class="nav flex-column p-2 fw-bold">
+                <li class="nav-item"><a href="#" class="nav-link" id="menu"><i class="bi bi-heart-fill me-2"></i> Liked Songs </a></li>
+                
+            </ul>
+            <ul class="nav flex-column p-2 fw-bold">
+                <li class="nav-item"><a href="#" class="nav-link" id="menu"><i class="fa-solid fa-crown me-2"></i> Premium</a></li>
+            </ul>
+            <div class="sideMenu m-2 rounded-4 p-2 mb-2" style="background-color: #1F1F1F;">
+              <div class="p-2">
+                <p class="fw-semibold mb-1">Create your first playlist</p>
+                <p class="fw-semibold" style="font-size: 12px;">It's easy,We will help you</p>
+                <button style="border: none;" class="button fw-semibold px-3 py-1 rounded-4">Create playlist</button>
+              </div>
+            </div>
+            <div class="sideMenu m-2 rounded-4 p-2" style="background-color: #1F1F1F;">
+              <div class="p-2">
+                <p class="fw-semibold mb-1">Let's find some podcasts to follow</p>
+                <p class="fw-semibold" style="font-size: 12px;">We will keep you updated on new episodes</p>
+                <button style="border: none;" class="button fw-semibold px-3 py-1 rounded-4">Browse podcasts</button>
+              </div>
+            </div>
+            <div class="ms-3 mt-3">
+              <a href="" class="languageButon text-white px-3 py-2 border rounded-4 text-decoration-none fw-bold mb-3"><i class="bi bi-globe"></i> English</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main ms-2 me container-fluid p-4 rounded-3" id="main-content">
+            <!-- Popular artists -->
+            <h2 class="text-white fw-bold fs-5 mb-4">Popular artists <span>Show all</span></h2>
+            <div class="row mb-2">
+                <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                    <div>
+                        <img style="width: 150px; height: 150px;" src="./images/artists/pritam.jpg" class="card-img rounded-circle" alt="Artist1">
+                    </div>
+                    <p class="text-white fw-semibold ms-3 mt-2 mb-0">Pritam</p>
+                    <p class="text-white ms-3">Artist</p>
+                </div>
+                <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                  <div class="text-white">
+                      <img style="width: 150px; height: 150px;" src="./images/artists/AR Rahman.jpeg" class="card-img rounded-circle" alt="Artist2">
+                  </div>
+                  <p class="text-white fw-semibold ms-3 mt-2 mb-0">A.R. Rahman</p>
+                  <p class="text-white ms-3">Artist</p>
+                </div>
+                <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                  <div class="text-white">
+                      <img style="width: 150px; height: 150px;" src="./images/artists/sachin jigar.jpeg" class="card-img rounded-circle" alt="Artist3">
+                  </div>
+                  <p class="text-white fw-semibold ms-3 mt-2 mb-0">Sachin Jigar</p>
+                  <p class="text-white ms-3">Artist</p>
+                </div>
+                <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                  <div class="text-white">
+                      <img style="width: 150px; height: 150px;" src="./images/artists/arijit singh.jpeg" class="card-img rounded-circle" alt="Artist4">
+                  </div>
+                  <p class="text-white fw-semibold ms-3 mt-2 mb-0">Arijit Singh</p>
+                  <p class="text-white ms-3">Artist</p>
+                </div>
+                <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                  <div class="text-white">
+                      <img style="width: 150px; height: 150px;" src="./images/artists/anirudh.jpeg" class="card-img rounded-circle" alt="Artist5">
+                  </div>
+                  <p class="text-white fw-semibold ms-3 mt-2 mb-0">Anirudh Ravichander</p>
+                  <p class="text-white ms-3">Artist</p>
+                </div>
+                <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                  <div class="text-white">
+                      <img style="width: 150px; height: 150px;" src="./images/artists/atif aslam.jpeg" class="card-img rounded-circle" alt="Artist6">
+                  </div>
+                  <p class="text-white fw-semibold ms-3 mt-2 mb-0">Atif Aslam</p>
+                  <p class="text-white ms-3">Artist</p>
+                </div>
+            </div>
+
+            <!-- Popular albums -->
+            <h2 class="text-white fw-bold fs-5  mb-4">Popular albums <span>Show all</span></h2>
+            <div class="row mb-5">
+              <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                  <div class="text-white">
+                      <img style="width: 150px; height: 150px;" src="./images/albums/glory.jpeg" class="card-img" alt="">
+                  </div>
+                  <p class="text-white ms-3 mt-2 mb-0">GLORY</p>
+                  <p class="artistName text-white ms-3 fw-semibold">Yo Yo Honey Singh</p>
+              </div>
+              <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                <div class="text-white">
+                    <img style="width: 150px; height: 150px;" src="./images/albums/ashiqui.jpeg" class="card-img" alt="">
+                </div>
+                <p class="text-white ms-3 mt-2 mb-0">Aashiqui 2</p>
+                <p class="artistName text-white ms-3 fw-semibold">Mithoon,Ankit Tiwari,<br>Jeet Gannguli</p>
+              </div>
+              <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                <div class=" text-white">
+                    <img style="width: 150px; height: 150px;" src="./images/albums/love hotel.jpeg" class="card-img" alt="">
+                </div>
+                <p class="text-white ms-3 mt-2 mb-0">love hotel</p>
+                  <p class="artistName text-white ms-3 fw-semibold">leftovermax</p>
+              </div>
+              <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                <div class="card bg-dark text-white">
+                    <img style="width: 150px; height: 150px;" src="./images/albums/aaj ki raat.jpeg" class="card-img" alt="">
+                </div>
+                <p class="text-white ms-3 mt-2 mb-0">Aaj Ki Raat (From "Stree 2")</p>
+                  <p class="artistName text-white ms-3 fw-semibold">Yo Yo Honey Singh</p>
+              </div>
+              <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                <div class="text-white">
+                    <img style="width: 150px; height: 150px;" src="./images/albums/mm.jpeg" class="card-img" alt="">
+                </div>
+                <p class="text-white ms-3 mt-2 mb-0">Making Memories</p>
+                  <p class="artistName text-white ms-3 fw-semibold">Karan Aujla,Ikky</p>
+              </div>
+              <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                <div class="text-white">
+                    <img style="width: 150px; height: 150px;" src="./images/albums/yjhd.jpeg" class="card-img" alt="">
+                </div>
+                <p class="text-white ms-3 mt-2 mb-0">Hey Jawaani Hai Deewani</p>
+                  <p class="artistName text-white ms-3 fw-semibold">pritam</p>
+              </div>
+            </div>
+
+            <!-- Spotify playlists -->
+            <h2 class="text-white fw-bold fs-5  mb-4">Spotify Playlists <span>Show all</span></h2>
+            <div class="row mb-5">
+              <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                  <div class="card bg-dark text-white">
+                      <img style="width: 150px; height: 150px;" src="./images/playlists/viral.jpeg" class="card-img" alt="">
+                  </div>
+                    <p class="text-white mt-1 ms-2" style="font-size: 14px; width: 140px;">Viral, trending and <br>taking off</p>
+              </div>
+              <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                <div class="card bg-dark text-white">
+                    <img style="width: 150px; height: 150px;" src="./images/playlists/wakeUp.jpeg" class="card-img" alt="">
+                </div>
+                <p class="text-white mt-1 ms-2" style="font-size: 14px; width: 140px;" ;>Wake up at your own pace with gentle piano music.</p>
+              </div>
+              <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                <div class="card bg-dark text-white">
+                    <img style="width: 150px; height: 150px;" src="./images/playlists/rapcaviar.jpeg" class="card-img" alt="">
+                </div>
+                <p class="text-white mt-1 ms-2" style="font-size: 14px; width: 140px;" ;>Music from Playboi Carti, Future and Drake.</p>
+              </div>
+              <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                <div class="card bg-dark text-white">
+                    <img style="width: 150px; height: 150px;" src="./images/playlists/All out 80s.jpeg" class="card-img" alt="">
+                </div>
+                <p class="text-white mt-1 ms-2" style="font-size: 14px; width: 140px;" ;>The biggest songs of the 1980s. Cover: Bruce Springsteen</p>
+              </div>
+              <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                <div class="card bg-dark text-white">
+                    <img style="width: 150px; height: 150px;" src="./images/playlists/top hits.jpeg" class="card-img" alt="">
+                </div>
+                <p class="text-white mt-1 ms-2" style="font-size: 14px; width: 140px;" ;>The hottest 50. Cover: Chappell Roan</p>
+              </div>
+              <div class="profile col-md-2 col-sm-6 mb-4 px-0">
+                <div class="card bg-dark text-white">
+                    <img style="width: 150px; height: 150px;" src="./images/playlists/jazzy.jpeg" class="card-img" alt="">
+                </div>
+                <p class="text-white mt-1 ms-2" style="font-size: 14px; width: 140px;" ;>Start your day right and wake up with some calm and cool Jazz.</p>
+              </div>
+            </div>
+            
+            <!-- Footer -->
+             <div class="footer row">
+                <div class="col-md-3">
+                  <ul class="list-unstyled">
+                    <li class="fw-bold mb-2">Company</li>
+                    <li class="links">About</li>
+                    <li class="links">Jobs</li>
+                    <li class="links">For the Record</li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="list-unstyled">
+                    <li class="fw-bold mb-2">Communities</li>
+                    <li class="links">For Artists</li>
+                    <li class="links">Developers</li>
+                    <li class="links">Advertising</li>
+                    <li class="links">Investors</li>  
+                    <li class="links">Vendors</li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="list-unstyled">
+                    <li class="fw-bold mb-2">Useful links</li>
+                    <li class="links">Support</li>
+                    <li class="links">Free Mobile App</li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="list-unstyled">
+                    <li class="fw-bold mb-2">Spotify Plans</li>
+                    <li class="links">Premium Individual</li>
+                    <li class="links">Premium Duo</li>
+                    <li class="links">Premium Family</li>
+                    <li class="links">Premium Student</li>
+                    <li class="links">Spotify Free</li>
+                  </ul>
+                </div>
+             </div>
+
+             <hr>
+             <p>&copy; 2024 Spotify AB</p>
+
+        </div>
+     </div>
+</body>
+</html>
